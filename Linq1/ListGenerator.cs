@@ -19,6 +19,18 @@ namespace Linq1
         public int CompareTo(Product? other)
             => this.UnitPrice.CompareTo(other?.UnitPrice);
 
+        public override bool Equals(object? obj)
+        {
+          Product? product = obj as Product;
+          if (product == null) return false;
+          return this.ProductID.Equals(product.ProductID) && this.ProductName.Equals(product.ProductName) && this.Category.Equals(product.Category)
+                 && this.UnitPrice.Equals(product.UnitPrice) && this.UnitsInStock.Equals(product.UnitsInStock);
+        }
+
+        public override int GetHashCode()
+        {
+          return HashCode.Combine(this.ProductID, this.ProductName, this.Category, this.UnitPrice, this.UnitsInStock);
+        }
 
         public override string ToString()
             => $"ProductID:{ProductID},ProductName:{ProductName},Category{Category},UnitPrice:{UnitPrice},UnitsInStock:{UnitsInStock}";

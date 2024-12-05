@@ -12,3 +12,4 @@ C:\Users\Mohammed\source\repos\LInq\Linq1\obj\Debug\net6.0\refint\Linq1.dll
 C:\Users\Mohammed\source\repos\LInq\Linq1\obj\Debug\net6.0\Linq1.pdb
 C:\Users\Mohammed\source\repos\LInq\Linq1\obj\Debug\net6.0\Linq1.genruntimeconfig.cache
 C:\Users\Mohammed\source\repos\LInq\Linq1\obj\Debug\net6.0\ref\Linq1.dll
+C:\Users\Mohammed\source\repos\LInq\Linq1\obj\Debug\net6.0\Linq1.sourcelink.json
